@@ -13,5 +13,15 @@ val Pink40 = Color(0xFF7D5260)
 object Colors {
     object Background {
         val Normal = Color(0xFFFFFFFF)
+        val RedLight = Color(0xFFFEF9F9)
+        val Red = Color(0xFFFDF5F5)
+    }
+    object Foreground {
+        val Red = Color(0xFFEb8585)
+    }
+
+    object Text{
+        val Normal = Color(0xFF000000)
+        val Hint = Color(0xFF6B7280)
     }
 }

@@ -1,4 +1,4 @@
-package ir.autol.app.ui.components.button
+package ir.autol.app.ui.components.preline.button
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
@@ -30,6 +30,10 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import ir.autol.app.R
+import ir.autol.app.ui.components.preline.button.ButtonTheme.Color
+import ir.autol.app.ui.components.preline.button.ButtonTheme.Size
+import ir.autol.app.ui.components.preline.button.ButtonTheme.State
+import ir.autol.app.ui.components.preline.button.ButtonTheme.Style
 
 @Composable
 fun Button(

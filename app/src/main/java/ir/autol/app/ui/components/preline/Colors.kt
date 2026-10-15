@@ -1,4 +1,4 @@
-package ir.autol.app.ui.components
+package ir.autol.app.ui.components.preline
 
 import androidx.compose.ui.graphics.Color
 

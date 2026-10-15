@@ -23,8 +23,8 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import ir.autol.app.R
-import ir.autol.app.ui.components.spinner.Size
-import ir.autol.app.ui.components.spinner.Spinner
+import ir.autol.app.ui.components.preline.spinner.Spinner
+import ir.autol.app.ui.components.preline.spinner.SpinnerTheme
 import ir.autol.app.ui.theme.AutolTheme
 
 @Composable
@@ -75,7 +75,7 @@ fun SplashPage(navController: NavController) {
             modifier = Modifier
                 .align(Alignment.BottomCenter)
                 .padding(bottom = 128.dp),
-            size = Size.Default,
+            size = SpinnerTheme.Size.Default,
             circularLine = true
         )
     }

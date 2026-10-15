@@ -23,9 +23,8 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import ir.autol.app.R
-import ir.autol.app.ui.components.button.Button
-import ir.autol.app.ui.components.button.Color
-import ir.autol.app.ui.components.button.Style
+import ir.autol.app.ui.components.preline.button.Button
+import ir.autol.app.ui.components.preline.button.ButtonTheme
 import ir.autol.app.ui.theme.AutolTheme
 import ir.autol.app.ui.theme.Colors
 
@@ -80,15 +79,15 @@ fun BanPage(navController: NavController) {
             modifier = Modifier.fillMaxWidth(),
             placeholder = "ارتباط با پشتیبانی",
             leadingIcon = painterResource(R.drawable.ic_support),
-            color = Color.Blue,
+            color = ButtonTheme.Color.Blue,
             isFilled = true
         ) { }
         Spacer(Modifier.height(8.dp))
         Button(
             modifier = Modifier.fillMaxWidth(),
             placeholder = "ورود با شماره دیگر",
-            style = Style.Outlined,
-            color = Color.Gray,
+            style = ButtonTheme.Style.Outlined,
+            color = ButtonTheme.Color.Gray,
             isFilled = true
         ) { }
     }

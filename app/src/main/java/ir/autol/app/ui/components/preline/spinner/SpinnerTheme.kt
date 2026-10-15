@@ -1,22 +1,30 @@
-package ir.autol.app.ui.components.spinner
+package ir.autol.app.ui.components.preline.spinner
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import ir.autol.app.ui.components.Colors
+import ir.autol.app.ui.components.preline.Colors
+import ir.autol.app.ui.components.preline.spinner.SpinnerTheme.Size as Size
 
-data class Theme(
+data class SpinnerTheme(
     val strokeWidth: Dp,
     val spinnerSize: Dp,
     val textSize: TextUnit,
     val trackColor: Color,
     val progressColor: Color,
     val labelColor: Color,
-)
+) {
+    sealed interface Size {
+        object Large : Size
+        object Default : Size
+        object Small : Size
+        object XS : Size
+    }
+}
 
-internal fun getTheme(size: Size): Theme = Theme(
+internal fun getTheme(size: Size): SpinnerTheme = SpinnerTheme(
     strokeWidth = getStrokeWidth(size),
     spinnerSize = getSpinnerSize(size),
     textSize = getTextSize(size),

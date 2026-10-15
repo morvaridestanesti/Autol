@@ -21,7 +21,10 @@ object Colors {
     }
 
     object Text{
-        val Normal = Color(0xFF000000)
+        val Active = Color(0xFF2563EB)
         val Hint = Color(0xFF6B7280)
+        val Label = Color(0xFF4B5563)
+        val Normal = Color(0xFF000000)
+        val Title = Color(0xFF1F2937)
     }
 }

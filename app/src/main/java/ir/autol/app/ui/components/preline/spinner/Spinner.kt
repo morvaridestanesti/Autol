@@ -1,4 +1,4 @@
-package ir.autol.app.ui.components.spinner
+package ir.autol.app.ui.components.preline.spinner
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -14,7 +14,8 @@ import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import ir.autol.app.ui.components.Colors
+import ir.autol.app.ui.components.preline.Colors
+import ir.autol.app.ui.components.preline.spinner.SpinnerTheme.Size
 
 @Composable
 fun Spinner(

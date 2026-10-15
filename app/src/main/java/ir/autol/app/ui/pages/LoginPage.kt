@@ -19,7 +19,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
+import ir.autol.app.ui.components.preline.alert.data.AlertButton
 import ir.autol.app.R
+import ir.autol.app.ui.components.preline.alert.Alert
+import ir.autol.app.ui.components.preline.alert.AlertTheme
 import ir.autol.app.ui.components.preline.avatar.Avatar
 import ir.autol.app.ui.components.preline.avatar.AvatarTheme
 import ir.autol.app.ui.components.preline.button.Button
@@ -74,6 +77,21 @@ fun LoginPage(navController: NavController) {
             placeholder = "09123456789",
             type = InputTheme.Type.Bordered,
             leadingContent = InputContent(iconEnd = painterResource(R.drawable.ic_phone))
+        )
+        Spacer(Modifier.height(16.dp))
+        Alert(
+            leadingIcon = painterResource(R.drawable.autol),
+            color = AlertTheme.Color.Yellow,
+            type = AlertTheme.Type.Soft,
+            messageContent = "تعداد درخواست‌های شما بیش از حد مجاز است. لطفاً 10 دقیقه دیگر تلاش کنید."
+        )
+        Spacer(Modifier.height(16.dp))
+        Alert(
+            leadingIcon = painterResource(R.drawable.autol),
+            color = AlertTheme.Color.Red,
+            type = AlertTheme.Type.Soft,
+            messageContent = "اتصال اینترنت خود را بررسی کنید.",
+            button1 = AlertButton("تلاش مجدد") { }
         )
         Spacer(Modifier.weight(1f))
         Row(verticalAlignment = Alignment.CenterVertically) {

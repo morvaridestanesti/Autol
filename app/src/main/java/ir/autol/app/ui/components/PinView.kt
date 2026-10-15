@@ -31,7 +31,7 @@ import androidx.compose.ui.unit.sp
 import ir.autol.app.ui.theme.Colors
 
 @Composable
-fun OtpTextField(
+fun PinView(
     otpLength: Int = 6,
     value: String = "",
     onChange: (String) -> Unit,
@@ -75,7 +75,7 @@ fun OtpTextField(
 }
 
 @Composable
-fun PinBox(
+private fun PinBox(
     value: String,
     isFocused: Boolean,
     modifier: Modifier = Modifier,
@@ -104,4 +104,4 @@ fun PinBox(
 
 @Preview(showBackground = true, apiLevel = 36)
 @Composable
-private fun Preview() = OtpTextField {}
+private fun Preview() = PinView {}

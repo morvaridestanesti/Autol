@@ -20,6 +20,7 @@ object Colors {
     object Foreground {
         val Error = Color(0xFFEb8585)
         val Focus = Color(0xFF2563EB)
+        val Icon = Color(0xFF1F2937)
         val Normal = Color(0xFFD1D5DB)
     }
 

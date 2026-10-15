@@ -1,16 +1,10 @@
 package ir.autol.app.ui.pages
 
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -19,6 +13,9 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import ir.autol.app.R
+import ir.autol.app.ui.components.PinView
+import ir.autol.app.ui.components.page_title.PageTitle
+import ir.autol.app.ui.components.page_title.data.NavigationItem
 import ir.autol.app.ui.theme.AutolTheme
 import ir.autol.app.ui.theme.Colors
 
@@ -27,22 +24,7 @@ fun OtpPage(navController: NavController) {
     Column(
         modifier = Modifier.padding(16.dp)
     ) {
-        Row(
-            modifier = Modifier.padding(bottom = 16.dp)
-        ) {
-            Icon(
-                painter = painterResource(R.drawable.ic_chevron_right),
-                contentDescription = null,
-                tint = Color.Black
-            )
-            Spacer(Modifier.padding(start = 40.dp))
-            Text(
-                text = "تایید شماره موبایل",
-                color = Colors.Text.Normal,
-                fontSize = 16.sp,
-                fontWeight = FontWeight.Bold,
-            )
-        }
+        PageTitle("تأیید شماره موبایل", NavigationItem(painterResource(R.drawable.ic_chevron_back)) { navController.popBackStack() })
         Text(
             text = "کد تایید را وارد کنید",
             color = Colors.Text.Normal,
@@ -56,6 +38,8 @@ fun OtpPage(navController: NavController) {
             fontWeight = FontWeight.Normal,
             modifier = Modifier.padding(bottom = 8.dp)
         )
+
+        PinView { }
     }
 }
 

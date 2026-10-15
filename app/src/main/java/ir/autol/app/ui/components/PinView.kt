@@ -104,6 +104,4 @@ fun PinBox(
 
 @Preview(showBackground = true, apiLevel = 36)
 @Composable
-private fun Preview() {
-    OtpTextField {}
-}
+private fun Preview() = OtpTextField {}

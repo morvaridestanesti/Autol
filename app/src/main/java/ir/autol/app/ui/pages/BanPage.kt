@@ -39,7 +39,7 @@ fun BanPage(navController: NavController) {
         Spacer(Modifier.height(32.dp))
         Card(
             modifier = Modifier.size(96.dp),
-            colors = CardDefaults.cardColors(Colors.Background.RedLight),
+            colors = CardDefaults.cardColors(Colors.Background.Error),
             elevation = CardDefaults.cardElevation(0.dp),
             shape = CircleShape
         ) {
@@ -47,7 +47,7 @@ fun BanPage(navController: NavController) {
                 modifier = Modifier
                     .fillMaxSize()
                     .padding(16.dp),
-                colors = CardDefaults.cardColors(Colors.Background.Red),
+                colors = CardDefaults.cardColors(Colors.Background.ErrorDark),
                 elevation = CardDefaults.cardElevation(0.dp),
                 shape = CircleShape
             ) {
@@ -57,7 +57,7 @@ fun BanPage(navController: NavController) {
                     modifier = Modifier
                         .fillMaxSize()
                         .padding(16.dp),
-                    tint = Colors.Foreground.Red
+                    tint = Colors.Foreground.Error
                 )
             }
         }

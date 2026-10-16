@@ -20,6 +20,7 @@ retrofit2KotlinxSerializationConverter = "1.0.0"
 room = "2.8.5"
 ucrop = "2.2.11"
 uiText = "1.12.1"
+identity = "202411.1"
 
 [libraries]
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
@@ -52,6 +53,7 @@ play-services-maps = { module = "com.google.android.gms:play-services-maps", ver
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 retrofit2-kotlinx-serialization-converter = { module = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter", version.ref = "retrofit2KotlinxSerializationConverter" }
 ucrop = { module = "com.github.yalantis:ucrop", version.ref = "ucrop" }
+identity = { group = "com.android.identity", name = "identity", version.ref = "identity" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

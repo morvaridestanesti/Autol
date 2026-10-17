@@ -23,5 +23,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Autol"
+rootProject.name = "Aotol"
 include(":app")

@@ -6,13 +6,13 @@ plugins {
 }
 
 android {
-    namespace = "ir.autol.app"
+    namespace = "ir.aotol.app"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "ir.autol.app"
+        applicationId = "ir.aotol.app"
         minSdk = 26
         targetSdk = 37
         versionCode = 1
